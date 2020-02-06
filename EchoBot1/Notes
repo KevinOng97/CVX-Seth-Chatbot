@@ -1,0 +1,78 @@
+Adaptive Card responses
+Dialog
+
+
+Adaptive Card thoughts
+	with each request for assistance in the stack, associate a unique QnA identifier with the message, BUT DISPLAY THE SAME TEXT IN REQUESTING FOR HELP
+	EX:
+		Video
+			What seems to be the problem?
+				Low Quality
+					Suggestion 1 (QnA response 1)
+					Did this work?
+						Yes
+							What else can I help you with? (call method again, I think?)
+						No (card reads "No," but QnA request processed as 1)
+
+					No
+					Suggestion 2 (QnA response as a function of QnA request of 1)
+					Did this work?
+						Yes
+							What else can I help you with? (call method again, I think?)
+						No (card reads "No," but QnA request processed as 2)
+
+					No
+					Suggestion 3 (QnA response as a function of QnA request of 2)
+
+
+
+
+
+Have to disable text entry?
+Make another csproj with QnA maker and not methods manually handling/processing
+Create list of suggested action strings to pop one at a time??? - currently hardcoded manually
+
+
+
+
+
+send activity async
+OnMessageActivity
+
+
+Send WelcomeMessage
+Send InitialSuggestions
+	Create buttons - Await activity
+var text
+process input
+
+
+
+todo
+	images
+	event links as hyperlinks
+	escalation handoff
+	go through all dialogue branches
+	Handle escalation at the end of No selections
+
+	create smtp server and force user sign-in
+	send email to support mailbox
+
+
+
+
+
+
+HLS message ok?
+Teams escalation ok, given that you don't need teams downloaded to use it?
+Email still ok with Teams working?
+	If still ok, how to handle replying?
+		create chevron smtp server for users to auto-login, but how to reply back to them?
+		
+Cut down length?
+
+
+
+
+
+
